@@ -2,13 +2,13 @@
 <html>
 <body align="center">
     <form>
-        Background Image URL: <input type="text" name="background" PlaceholderText="URL To Background Image">
+        Background Image URL: <input type="text" name="background" id="background" PlaceholderText="URL To Background Image">
     </form>
   <button type="button" onclick="getInputValue("background");">Change Background</button>
     <script>
       function getInputValue(name) {
         // Selecting the input element and get its value 
-        let inputVal = document.getElementById("background").value;
+        let inputVal = document.getElementById(name).value;
          <img src="inputVal" />
         // Displaying the value
         alert(inputVal);
